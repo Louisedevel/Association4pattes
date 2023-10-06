@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association 4 Pattes</title>
     <meta name="description" content="L'Association 4 Pattes recueille tous les animaux abandonnés">
+    <link href="styles.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
@@ -29,50 +30,50 @@
 </nav>
 </header>
 
-<body style="background-color: #73c2be;">
+<body>
     <h1 class="text-center">Bienvenue sur le site de l'Association 4 Pattes</h1>
-    <video src="image/vidéo cheval.mp4" class="object-fit-container" autoplay width="300px"></video>
-
+    <video src="image/vidéo cheval.mp4" class="object-fluid-container " autoplay width="300px"></video>
+    <br/>
     
     <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i> Qui sommes-nous ?</button>
-    <p>IFIFBJHBVHJVBJBVJBJHDVBHJ</p>
+    <p>Lors de la création de l'association, nous étions un groupe de 7 personnes passionnées d'animaux, qui ont décidées de se regrouper afin d'en sauver un maximum. 10 ans après, nous sommes une cinquantaine de bénévoles et nous accueillons environ 150 animaux de toutes espèces, afin de les remettre sur pieds, puis de les faire adopter.<br>Depuis la création de l'association 1220 animaux ont pu être sauvés et adoptés.</p>
     
     <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i> A l'adoption :</button>
       <div class="accordion" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
             Haribo
           </button>
-        </h2>
+        </h3>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
           <div class="accordion-body">
             <strong>Haribo est un chien de 5ans</strong>  Il a été retiré à ses propriétaires qui le maltraitaient 
-            <img src="image/Haribo.jpg" alt="photo Haribo"></div>
+            <img src="image/Haribo.jpg" alt="photo Haribo" width="300px" height="250px"></div>
       
           </div>
       <div class="accordion-item">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
             Pumba
           </button>
-        </h2>
+        </h3>
         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
           <div class="accordion-body">
-            <strong>Pumba est un cochon d'inde de 3 mois</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>Pumba est un cochon d'inde de 3 mois.</strong>Il est très gentil et adore qu'on s'occupe de lui.
           <img src="image/Pumba.jpg" alt="Photo Pumba">
           </div>
         </div>
       </div>
       <div class="accordion-item">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
             Atchoum
           </button>
-        </h2>
+        </h3>
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
           <div class="accordion-body">
-            <strong>Atchoum est un ane de 2 ans</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>Atchoum est un ane de 2 ans</strong>Atchoum est un sympathique petit âne qui sera heureux chez vous si vous avez une grande pature et un cheval ou un autre âne pour lui tenir compagnie.
           <img src="image/Atchoum.jpg" alt="Photo Atchoum">
           </div>
         </div>
@@ -81,12 +82,38 @@
       </div>
 
     <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i> Comment adopter ?</button>
-    <p>Pour nous adopter, vous pouvez remplir le formulaire de contact ci-dessous, en indiquant l'animal que vous souhaitez adopter. Nous vous recontacterons et ferons une visite chez vous afin de vérifier si les conditions de vie sont bien adaptées à l'animal que vous souhaitez adopter</p>
+    <p>Pour nous adopter, vous pouvez remplir le formulaire de contact ci-dessous, en indiquant l'animal que vous souhaitez adopter. Nous vous recontacterons et ferons une visite chez vous afin de vérifier si les conditions de vie sont bien adaptées à l'animal que vous souhaitez adopter.</p>
+    <form action="" method="post" autocomplete="on">
+      <div>
+      <label for="name">Nom :</label>
+      <input id="name" type="text" required>
+      <br>
+      </div>
+      <div>
+      <label for="firstname">Prénom :</label>
+      <input id="firstname" type="text" required>
+      <br>
+      </div>
+      <label for="tel">Numéro de téléphone :</label>
+      <input id="tel" type="tel" required>
+      <label for="email">Mail :</label>
+      <input id="email" type="email">
+      <label for="choice">Quel animal souhaitez vous adopter ?</label>
+      <select required>
+        <option value="Haribo">Haribo</option>
+        <option value="Pumba">Pumba</option>
+        <option value="Atchoum">Atchoum</option>
+      </select>
+      <label for="check">Je certifie avoir les éléments nécessaires pour que l'animal soit heureux.</label>
+      <input type="checkbox">
+      <br>
+      <button type="submit">Valider</button>
 
+    </form>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer style="background-color: grey; color: white;" class="container text-center">
+<footer style="background-color: grey; color: white; padding-bottom: 15px;" class="container-fluid text-center">
   <p> Tous droits réservés</p>
   <div><i class="bi bi-facebook"></i>
     <i class="bi bi-instagram"></i>
