@@ -32,14 +32,14 @@
 
 <body>
     <h1 class="text-center">Bienvenue sur le site de l'Association 4 Pattes</h1>
-    <video src="image/vidéo cheval.mp4" class="object-fluid-container " autoplay width="300px"></video>
-    <br/>
+    <video src="image/vidéo cheval.mp4" class="object-fluid-container videocheval " autoplay width="auto"></video>
+
+    <h4 class="container text-white rounded-3 m-3 p-1 ps-3  "><i class="bi bi-arrow-right-circle"></i> Qui sommes-nous ?</h4>
     
-    <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i> Qui sommes-nous ?</button>
     <p>Lors de la création de l'association, nous étions un groupe de 7 personnes passionnées d'animaux, qui ont décidées de se regrouper afin d'en sauver un maximum. 10 ans après, nous sommes une cinquantaine de bénévoles et nous accueillons environ 150 animaux de toutes espèces, afin de les remettre sur pieds, puis de les faire adopter.<br>Depuis la création de l'association 1220 animaux ont pu être sauvés et adoptés.</p>
+    <h4 class="container text-white rounded-3 m-3 p-1 ps-3  "><i class="bi bi-arrow-right-circle"></i> A l'adoption</h4>
     
-    <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i> A l'adoption :</button>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion m-3" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
         <h3 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -67,7 +67,7 @@
       </div>
       <div class="accordion-item">
         <h3 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
             Atchoum
           </button>
         </h3>
@@ -80,34 +80,41 @@
       </div>
     </div>
       </div>
-
-    <button type="button" class="btn btn-secondary"><i class="bi bi-arrow-right-circle"></i> Comment adopter ?</button>
+      <h4 class="container text-white rounded-3 m-3 p-1 ps-3  "><i class="bi bi-arrow-right-circle"></i> Comment adopter ?</h4>
     <p>Pour nous adopter, vous pouvez remplir le formulaire de contact ci-dessous, en indiquant l'animal que vous souhaitez adopter. Nous vous recontacterons et ferons une visite chez vous afin de vérifier si les conditions de vie sont bien adaptées à l'animal que vous souhaitez adopter.</p>
-    <form action="" method="post" autocomplete="on">
-      <div>
+    <form class="m-3" action="" method="post" autocomplete="on" >
+      <div class="p-1">
       <label for="name">Nom :</label>
       <input id="name" type="text" required>
       <br>
       </div>
-      <div>
+      <div class="p-1">
       <label for="firstname">Prénom :</label>
       <input id="firstname" type="text" required>
       <br>
       </div>
+      <div class="p-1">
       <label for="tel">Numéro de téléphone :</label>
       <input id="tel" type="tel" required>
+      </div>
+      <div class="p-1">
       <label for="email">Mail :</label>
       <input id="email" type="email">
+      </div>
+      <div class="p-1">
       <label for="choice">Quel animal souhaitez vous adopter ?</label>
       <select required>
         <option value="Haribo">Haribo</option>
         <option value="Pumba">Pumba</option>
         <option value="Atchoum">Atchoum</option>
       </select>
+      </div>
+      <div class="p-1">
       <label for="check">Je certifie avoir les éléments nécessaires pour que l'animal soit heureux.</label>
       <input type="checkbox">
       <br>
       <button type="submit">Valider</button>
+      </div>
 
     </form>
 
