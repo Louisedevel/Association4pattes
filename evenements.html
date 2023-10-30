@@ -31,13 +31,14 @@
 </header>
 <body>
   <h1 class="text-center">Les prochains évènements</h1>
-  <div>
+  <div class="row row-cols-1 row-cols-xl-3">
+  <div class="col">
     <h4 class="text-white rounded-3 m-3 p-1 mr-2"><i class="bi bi-arrow-right-circle"></i> Journée Portes Ouvertes</h4>
     <p>Nous organisons une journée porte ouverte au refuge le 15 Novembre 2023. Vous pourrez ainsi venir visiter les lieux et rencontrer nos bénévoles et nos animaux.
     </p>
     <img class="container-fluid" src="image/refuge.jpg" alt="refuge">
 </div>
-<div> 
+<div class="col"> 
 <h4 class="text-white rounded-3 m-3 p-1 ps-3 "><i class="bi bi-arrow-right-circle"></i> Collecte pour nos animaux</h4>
     <p>Nous organisons régulièrement des collectes de nourriture,couverture, matériels, jouets pour animaux.
     Vous trouverez ci-dessous les prochains lieux de collecte :
@@ -48,7 +49,7 @@
     </ul>
   </p>
 </div>
- 
+<div class="col">
 <h4 class="text-white rounded-3 m-3 p-1 ps-3  "><i class="bi bi-arrow-right-circle"></i> Devenir Bénévoles</h4>
   
   <p>Nos animaux ont besoin de contact,de sortir, jouer, de recevoir de l'attention .<br/> Alors si vous souhaitez venir passer un peu de temps avec eux, n'hesitez pas à vous inscrire via le formulaire ci dessous.
@@ -76,8 +77,14 @@
       <option value="5">Petits animaux de compagnie (Cochons d'inde,lapins...)</option>
       <option value="6">NAC (Serpents, lézards)</option>
     </select>
-    <label for="floatingSelect">Sélectionner les animaux dont vous souhaitez vous occuper</label>
+    <label for="floatingSelect">Animaux dont vous souhaitez vous occuper</label>
+    <br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-primary" type="submit">Valider</button>
+    </div>
   </div>
+  </div>
+</div>
   </div>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
