@@ -7,10 +7,8 @@ h1 {
     color:#0081a7;
 }
 
-h4 {
+h2 {
     background-color: #0081a7;
-    
-
 }
 
 p{
@@ -27,9 +25,43 @@ p{
 
 .imgaccordion {
     display: block;
-    margin:auto;
+    margin: auto;
     margin-top: 10px;
-    max-width: 300px;
-    max-height:250px;
+    max-width: 200px;
+    max-height: 250px;
 }
 
+@media screen and (min-width: 768px) {
+    h2 {background-color: #C298A6;}
+    .videocheval {
+        width: max-content;
+        height: 250px;
+    }
+
+    .imgaccordion {
+        float: right;
+        max-width: 40%;
+        max-height: 40%;
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    }
+}
+@media screen and (min-width: 1024px) {
+    h2 {background-color: #B0CC99;
+    }
+
+    .videocheval {
+        width: max-content;
+        height: 350px;
+    }
+
+    .imgaccordion {
+        max-width: 55%;
+        max-height: 55%;
+    }
+}
